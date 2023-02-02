@@ -7,9 +7,16 @@ public class Problem4_Main {
     }
 
     private String longestCommonPrefix(String[] strs){
-        for (int i=0;i< strs.length;i++)
-        {
-            if(strs[i])
-        }
+        String stringCommon="";
+       for(int i=0;i<strs[0].length();i++)
+       {
+           String temp=strs[0].substring(0,i);
+           for(int j=0;j<strs.length;j++)
+           {
+               if(temp.equals(strs[j].substring(0,i)))
+                     stringCommon=temp;
+               else  stringCommon="";
+           }
+       }
     }
 }
